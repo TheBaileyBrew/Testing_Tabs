@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="Testing_Tabs.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary">Black</Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+
+            
+
+
+            <!-- Sizes -->
+            <x:Double x:Key="TabButtonIconSize">20</x:Double>
+            <x:Double x:Key="ToolbarHeight">75</x:Double>
+            <x:Double x:Key="BottomBarHeight">75</x:Double>
+
+
+            <!-- Font Delegates -->
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeBrands">
+              <On Platform="Android" 
+                  Value="fa-brands-400.ttf#Brands" />
+              <On Platform="iOS" 
+                  Value="FontAwesome5Brands-Brands" />
+            </OnPlatform> 
+    
+            <OnPlatform x:TypeArguments="x:String" 
+                        x:Key="FontAwesomeSolid"> 
+              <On Platform="Android" 
+                  Value="fa-solid-900#Solid" /> 
+              <On Platform="iOS" 
+                  Value="FontAwesome5Free-Solid" /> 
+            </OnPlatform> 
+    
+            <OnPlatform x:TypeArguments="x:String" 
+                        x:Key="FontAwesomeRegular">
+              <On Platform="Android" 
+                  Value="fa-regular-400.ttf#Regular" /> 
+              <On Platform="iOS" 
+                  Value="FontAwesome5Free-Regular" />  
+            </OnPlatform>
+
+            <x:String x:Key="OrderGlyph">&#xf096;</x:String>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
